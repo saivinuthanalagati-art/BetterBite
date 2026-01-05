@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BetterBite — Personalized Recommendations</title>
+    <link rel="stylesheet" href="css/personalised-reccommendation.css" />
+    <link rel="stylesheet" 
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!-- Header w/ title + profile buttons -->
+    <header>
+      <div class="app-name-wrapper" onclick="window.location.href='nutritionAnalysis.html'">
+        <img src="assets/images/logo.png" alt="BetterBite logo" />
+        <div class="app-name">BetterBite</div>
+      </div>
+
+      <div class="header-buttons" onclick="window.location.href='profile.html'">
+        <!-- Profile picture and user first name -->
+        <button>
+          <img class="header-profile-img" src="assets/images/default-user.png" alt="Profile Icon" class="header-profile-pic" />
+        </button>
+        <h2 class="profile-name">Jane Doe</h2>
+      </div>
+    </header>
+
+    <main>
+        <div class="page-title">
+          <!-- <div class="page-heading"> -->
+            <!-- <span class="material-symbols-outlined cart-icon">shopping_cart</span> -->
+            <h1>Personalized Food Recommendations</h1>
+          <!-- </div> -->
+          <p class="page-subtitle">Personalized recipe selections based on your tracked meals and preferences.</p>
+        </div>
+
+        <div class="recipe-section-box">
+
+        </div>
+
+        <!-- Back & Home navigation buttons -->
+        <div class="nav-buttons">
+          <button id="back-button" onclick="window.location.href='nutritionAnalysis.html'">Back</button>
+          <button id="home-button" onclick="window.location.href='recipe.html'">Next</button>
+        </div>
+    </main>
+
+    <script>
+      // Higlight selected recipe button when clicked
+      const recipeButtons = document.querySelectorAll('.recipe-button');
+
+      recipeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Unselect a selected recipe when it is clicked again
+          if (button.classList.contains('selected-recipe')) {
+            button.classList.remove('selected-recipe');
+          } 
+          else {
+            // Remove selection style from all buttons to clear previously selected recipe      
+            recipeButtons.forEach(btn => 
+              btn.classList.remove('selected-recipe')
+            );
+
+            // Select chosen recipe
+            button.classList.add('selected-recipe');
+          }
+        });
+      });
+    </script>
+    <script src="js/profile.js"></script>
+    <script src="js/personalised-reccommendation.js"></script>
+    <script src="js/analysis.js"></script>
+</body>
+</html>

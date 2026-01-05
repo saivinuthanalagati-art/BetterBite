@@ -1,0 +1,306 @@
+body {
+  background-color: #FEFAE0;
+  font-family: 'Inter', sans-serif;
+  margin: 0px;
+  color: #333333;
+}
+
+/* Header with title and settings + account buttons */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background-color: white;
+  border-bottom: 1.5px solid #e6e2c7;
+  box-shadow: 0 2px 8px rgba(79, 123, 88, 0.05);
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+
+/* App name + logo */
+.app-name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.app-name-wrapper img {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+}
+
+.app-name {
+  color: #4F7B58;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+/* Header icons + user profile buttons */
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #4F7B58;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.header-profile-img {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #4F7B58;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4F7B58;
+  margin: 0px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #4F7B58;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.icon-btn:hover {
+  color: #36593f;
+  transform: scale(1.15);
+}
+
+.icon-btn .material-symbols-outlined {
+  font-size: 34px;
+}
+
+/* Weekly Food Tracker */
+main {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 50px;
+}
+
+.tracker-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tracker-title h1 {
+  font-size: 38px;
+  color: #2f4f38;
+  margin-bottom: 5px;
+}
+
+.tracker-title p {
+  color: #666;
+}
+
+/* Clear All Entries */
+.clear-button {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  margin: 30px 0px;
+}
+
+.clear-button button {
+  background: linear-gradient(135deg, #d1baff, #b79af6);
+  border: 1px solid #c5b2fa;
+  border-radius: 12px;
+  padding: 14px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4e3f84;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  width: 220px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.clear-button button:hover {
+  background-color: #a58ae0;
+  border-color: #9276d0;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Form */
+.tracker-container {
+  background-color: #e6efd1;
+  border: 1.5px solid #e6e2c7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease;
+}
+
+.tracker-container:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid layout for dropdowns */
+.dropdowns-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 60px;
+  width: 100%;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown.full {
+  grid-column: 1 / -1;
+  align-items: center;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2f4f38;
+  margin-bottom: 6px;
+}
+
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #bfc9b8;
+  font-size: 16px;
+  color: #2f2f2f;
+  background-color: white;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23446c4f' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 25px;
+}
+
+select:focus {
+  border-color: #9bc37a;
+  box-shadow: 0 0 0 3px rgba(156, 203, 122, 0.2);
+  outline: none;
+}
+
+/* Add Food Entry Button */
+.food-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.food-button button {
+  background-color: #4f7b58;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 14px 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.food-button button:hover {
+  background-color: #416947;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+/* Food Entry List */
+.food-entries-list{
+  margin-top: 10px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.food-entry-item{
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+}
+
+.food-entry-item:last-child{
+  border-bottom: none;
+}
+
+
+/* back and next buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 40px auto 70px;
+}
+
+.nav-buttons button {
+  background: linear-gradient(135deg, #d1baff, #b79af6);
+  border: 1px solid #c5b2fa;
+  border-radius: 12px;
+  padding: 14px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4e3f84;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  width: 220px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-buttons button:hover {
+  background-color: #a58ae0;
+  border-color: #9276d0;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive changes */
+@media (max-width: 768px) {
+  header {
+    padding: 16px 24px;
+  }
+
+  .header-buttons {
+    gap: 5px;
+  }
+
+  .tracker-title h1 {
+    font-size: 34px;
+  }
+
+  .dropdowns-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .dropdown.full {
+    align-items: flex-start;
+  }
+  .nav-buttons button {
+    max-width: 160px;
+  }
+}

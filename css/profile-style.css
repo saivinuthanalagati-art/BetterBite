@@ -1,0 +1,369 @@
+body {
+    background-color: #FEFAE0;
+    font-family: 'Inter', sans-serif;
+    margin: 0px;
+    color: #333333;
+}
+
+/* Header with title and settings + account buttons */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background-color: white;
+    border-bottom: 1.5px solid #e6e2c7;
+    box-shadow: 0 2px 8px rgba(79, 123, 88, 0.05);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+/* App name + logo */
+.app-name-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.app-name-wrapper img {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+}
+
+.app-name {
+    color: #4F7B58;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/* Settings + profile buttons */
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4F7B58;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+.header-profile-img {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #4F7B58;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #4F7B58;
+    margin: 0px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4F7B58;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.icon-btn:hover {
+    color: #36593f;
+    transform: scale(1.15);
+}
+
+.icon-btn .material-symbols-outlined {
+    font-size: 34px;
+}
+
+/* Account details section */
+main {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 50px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-title h1 {
+    font-size: 38px;
+    color: #2f4f38;
+    margin-bottom: 5px;
+}
+
+.page-title p {
+    color: #666;
+}
+
+.profile-container {
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    padding: 40px 50px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Profile picture */
+.profile-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #8ab490;
+    margin-bottom: 12px;
+}
+
+.upload-btn {
+    background-color: #4F7B58;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.upload-btn:hover {
+    background-color: #456f4f;
+    transform: scale(1.02);
+}
+
+/* View + edit profile information */
+form {
+    flex: 1;
+    max-width: 400px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #666;
+    margin: 0px 0px 10px;
+}
+
+#passwordInput {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: 600;
+    color: #2f4f38;
+    margin-bottom: 6px;
+}
+
+input {
+    height: 25px;
+    border: 2px solid #d1d9cc;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 15px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+    border-color: #4F7B58;
+    box-shadow: 0 0 5px rgba(79, 123, 88, 0.4);
+    outline: none;
+}
+
+.optional {
+    color: #999999;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.view-profile .form-actions {
+    text-align: right;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.edit-profile .form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;;
+    margin: 25px 0px 50px;
+}
+
+.edit-btn, .save-btn {
+    background-color: #456f4f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s;
+}
+
+.edit-btn:hover, .save-btn:hover {
+    background-color: #3d6246;
+    transform: scale(1.02);
+}
+
+.cancel-btn {
+    background-color: white;
+    color: #3d6246;
+    border: 3px solid #3d6246;
+    border-radius: 8px;
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    min-width: 150px;
+    transition: background-color 0.2s ease, transform 0.1s;
+}
+
+.cancel-btn:hover {
+    color: #32523b;
+    border-color: #32523b;
+    transform: scale(1.02);
+}
+
+.delete-account h2 {
+    color: #2f4f38;
+}
+
+.delete-account p {
+    color: rgb(65, 65, 65);
+}
+
+.delete-btn-wrapper {
+    text-align: right;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.delete-account-btn {
+    background-color: white;
+    color: rgb(234, 50, 50);
+    border: 3px solid rgb(234, 50, 50);
+    border-radius: 8px;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.1s;
+}
+
+.delete-account-btn:hover {
+    color: rgb(206, 41, 41);
+    border-color: rgb(206, 41, 41);
+    transform: scale(1.02);
+}
+
+/* Navigation buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 40px auto 70px;
+}
+
+.nav-buttons button {
+    background: linear-gradient(135deg, #d1baff, #b79af6);
+    border: 1px solid #c5b2fa;
+    border-radius: 12px;
+    padding: 14px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4e3f84;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    width: 220px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-buttons button:hover {
+    background-color: #a58ae0;
+    border-color: #9276d0;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive changes */
+@media (max-width: 790px) {
+    header {
+        padding: 16px 24px;
+    }
+
+    .header-buttons {
+        gap: 5px;
+    }
+
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #passwordInput {
+        margin-bottom: 10px;
+    }
+
+    .view-profile .form-actions {
+        text-align: center;
+    }
+
+    .edit-profile .form-actions {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin: 25px 0px 0px;
+    }
+
+    .edit-btn {
+        margin: 10px 10px 25px 0px;
+    }
+
+    .save-btn {
+        margin: 10px 10px 25px 0px;
+    }
+
+    .cancel-btn {
+        margin: 10px 10px 25px 0px;
+        max-width: 150px;
+        min-width: 130px;
+        min-height: 60px; 
+        height: 100%;
+    }
+
+    .delete-account {
+        margin-top: 50px;
+    }
+
+    .nav-buttons button {
+        max-width: 160px;
+    }
+}

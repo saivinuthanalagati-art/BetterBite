@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BetterBite — Grilled Salmon with Mango Salsa</title>
+
+    <link rel="stylesheet" href="css/recipe-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <!-- Header w/ title + profile buttons -->
+    <header>
+        <div class="app-name-wrapper" onclick="window.location.href='nutritionAnalysis.html'">
+            <img src="assets/images/logo.png" alt="BetterBite logo" />
+            <div class="app-name">BetterBite</div>
+        </div>
+
+        <div class="header-buttons" onclick="window.location.href='profile.html'">
+            <!-- Profile picture and user first name -->
+            <button>
+                <img class="header-profile-img" src="assets/images/default-user.png" alt="Profile Icon" class="header-profile-pic" />
+            </button>
+            <h2 class="profile-name">Jane Doe</h2>
+        </div>
+    </header>
+
+    <!-- Recipe information -->
+    <main>
+        <div class="recipe-container">
+            <h1 class="page-title"></h1>
+            <hr>
+            <div class="flex-wrapper">
+                <div class="recipe-img">
+                    <img class="column"/>
+                </div>
+                <div class="ingredients">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <!-- <li>1 cup cilantro</li>
+                        <li>2 chopped jalapenos</li>
+                        <li>1/2 lime</li>
+                        <li>Salmon</li>
+                        <li>1 tbsp Avocado Oil</li>
+                        <li>pinch of Garlic Powder</li>
+                        <li>pinch of Black Pepper</li>
+                        <li>pinch of Salt</li>
+                        <li>1 sliced Cucumber</li>
+                        <li>3 slices of red onion</li> -->
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Instructions</h2>
+            <!-- <p>Estimated Time: 30 minutes</p> -->
+            <!-- <h3>Prepare the sala and seasoning:</h3>
+            <p><span class="step-label">Step One: </span>Mix together salt, black pepper, and garlic powder for your salmon
+                seasoning.</h3>
+            <p><span class="step-label">Step Two: </span>Place the salmon flesh-side down and cook for 3 minutes on an
+                outdoor grill or indoor grill pan. If using an outdoor grill, close the lid. Gently flip the salmon by
+                sliding a spatula underneath and cook for an additional 2 to 5 minutes, depending on the thickness of the
+                fillets.</h3>
+            <p><span class="step-label">Step Three: </span>Remove the salmon from the grill, let it rest for 2 to 3 minutes,
+                then squeeze fresh lemon juice on top. Top with a portion of mango salsa before serving.</h3> -->
+            <h2>Storage:</h2>
+            <p>For the best taste and freshness, refrigerate within 2 hours and enjoy within 3 days.</h3>
+        </div>
+
+        <!-- Back & Home navigation buttons -->
+        <div class="nav-buttons">
+            <button id="back-button" onclick="window.location.href='personalised-reccommendation.html'">Back</button>
+            <button id="home-button" onclick="window.location.href='nutritionAnalysis.html'">Home</button>
+        </div>
+    </main>
+    <script src="js/recipe.js"></script>
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>

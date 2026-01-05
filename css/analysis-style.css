@@ -1,0 +1,431 @@
+body {
+  background-color: #FEFAE0;
+  font-family: 'Inter', sans-serif;
+  margin: 0px;
+  color: #333333;
+}
+
+/* Header with title and settings + account buttons */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background-color: white;
+  border-bottom: 1.5px solid #e6e2c7;
+  box-shadow: 0 2px 8px rgba(79, 123, 88, 0.05);
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+
+/* App name + logo */
+.app-name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.app-name-wrapper img {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+}
+
+.app-name {
+  color: #4F7B58;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+/* Header icons + user profile buttons */
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #4F7B58;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.header-profile-img {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #4F7B58;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4F7B58;
+  margin: 0px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #4F7B58;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.icon-btn:hover {
+  color: #36593f;
+  transform: scale(1.15);
+}
+
+.icon-btn .material-symbols-outlined {
+  font-size: 34px;
+}
+
+/* Main container */
+main {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 50px;
+}
+
+/* Title + subtitle */
+.container {
+  background-color: #f5f7ed;
+  border: 1.5px solid #e6e2c7;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(79, 123, 88, 0.1);
+  padding: 40px 50px;
+  margin-bottom: 60px;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 25px 0px 10px;
+}
+
+.title-row .material-symbols-outlined {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  color: #4F7B58;
+}
+
+#title-description {
+  justify-self: center;
+}
+
+.section-description {
+  color: #666;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #2f4f38;
+  margin: 0px;
+}
+
+.divider {
+  border: none;
+  border-top: 2px solid #e4e1d1;
+  margin: 25px 0;
+}
+
+/* Nutrients section */
+.section-title {
+  font-weight: 700;
+  color: #2f4f38;
+  margin: 0px;
+  font-size: 28px;
+}
+
+.section-description {
+  margin: 0px 0px 35px; 
+}
+
+.nutrient-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.nutrient-column {
+  flex: 1;
+}
+
+.nutrient {
+  margin-bottom: 22px;
+}
+
+.label, .value {
+  font-weight: 600;
+  font-size: 15px;
+  color: #2f4f38;
+}
+
+.value {
+  float: right;
+}
+
+.bar-container {
+  width: 100%;
+  background-color: #e1dfd9;
+  border: 1px solid #d1d2cd;
+  border-radius: 6px;
+  height: 10px;
+  clear: both;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 10px;
+  border-radius: 6px;
+  transition: width 0.4s ease;
+}
+
+.bar.green {
+  background-color: #78c87a;
+}
+
+.bar.red {
+  background-color: #e25350;
+}
+
+/* Insights section */
+.insights {
+  background-color: #e8f1d4;
+  border: 1px solid #dae7b7;
+  border-radius: 12px;
+  padding: 25px 28px;
+}
+
+.insights-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.insights-row .material-symbols-outlined {
+  font-size: 30px;
+  color: #4F7B58;
+}
+
+.insights-row h3 {
+  font-size: 28px;
+  color: #2f4f38;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-style: italic;
+  font-size: 17px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.improvements {
+  background-color: #FAFAEF;
+  border: 1.5px solid #e6e2c7;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.improvements ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 40px;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.improvements li {
+  font-size: 15px;
+  color: #2f4f38;
+  font-weight: 500;
+  position: relative;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.improvements li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #7b9b83; 
+  font-size: 28px;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 40px auto 70px;
+}
+
+.nav-buttons button {
+  background: linear-gradient(135deg, #d1baff, #b79af6);
+  border: 1px solid #c5b2fa;
+  border-radius: 12px;
+  padding: 14px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4e3f84;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  width: 220px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-buttons button:hover {
+  background: linear-gradient(135deg, #c6a9ff, #a78af2);
+  border-color: #9276d0;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* need to make this smaller somehow, its annoying me D: */
+.info-button {
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.hover-button {
+  position: relative;
+  display: inline-block;
+}
+
+.popup-text {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4F7B58;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: normal;
+  width: max-content;      
+  max-width: 300px;            
+  word-wrap: break-word;      
+  font-size: 12px;
+  transition: opacity .2s ease;
+  z-index: 20;
+  pointer-events: none;
+  text-align: left;
+  line-height: 1.3;
+}
+
+.hover-button:hover .popup-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Weekly timeline graph */
+.weekly-graph-section {
+  margin-bottom: 60px;
+}
+
+.weekly-graph-card {
+  margin-top: 10px;
+}
+
+.weekly-graph-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.weekly-graph-controls label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2f4f38;
+}
+
+#weekly-metric-select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #c9c7b8;
+  font-size: 15px;
+  color: #2f4f38;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.weekly-graph-canvas-wrapper {
+  margin-top: 10px;
+}
+/* Responsive changes*/
+@media (max-width: 768px) {
+  header {
+    padding: 16px 24px;
+  }
+
+  .header-buttons {
+    gap: 5px;
+  }
+
+  .container {
+    padding: 35px;
+  }
+
+  .nutrient-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-buttons button {
+    max-width: 160px;
+  }
+
+/* Day Select Dropdown **need to fix** */
+.day-select {
+  background-color: #f5f7ed;
+  border: 1.5px solid #e6e2c7;
+  padding: 18px 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(79, 123, 88, 0.08);
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 350px;
+}
+
+.day-select label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2f4f38;
+}
+
+#analysis-day-select {
+  padding: 8px 12px;
+  border: 1.5px solid #c9c7b8;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #2f4f38;
+  cursor: pointer;
+}
+}
