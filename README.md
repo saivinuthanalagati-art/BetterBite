@@ -9,7 +9,7 @@ Analyzes daily and weekly nutrient intake
 Visualizes nutrient trends with charts and progress indicators
 Recommends personalized recipes based on deficiencies and preferences
 ## ✨ Key Features
-🧠 Profile Quiz
+* 🧠 Profile Quiz
 - Captures dietary restrictions, allergies, and cuisine preferences
 🍽️ Weekly Food Tracker
 - Structured meal logging by day, category, and serving size
