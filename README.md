@@ -22,10 +22,10 @@ Recommends personalized recipes based on deficiencies and preferences
  📈 Weekly Nutrient Timeline
 - Graphs that show how nutrient consumption changes over time
 
-  🍲 Personalized Recipe Recommendations
+🍲 Personalized Recipe Recommendations
 - Filtered recipes tailored to user needs, preferences, and nutrient gaps
 
-  💡 Educational Pop-ups
+💡 Educational Pop-ups
 - Inline explanations that help users understand what nutrients do and why they matter
   
 ## 🛠️ Tech Stack
