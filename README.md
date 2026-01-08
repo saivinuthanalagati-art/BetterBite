@@ -1,5 +1,5 @@
 # BetterBite
-## 🥗 BetterBite — Nutrition Tracking & Personalized Food Recommendations
+## 🥗 BetterBite : Nutrition Tracking & Personalized Food Recommendations
 BetterBite is a web-based nutrition tracking application that helps users understand their nutrient intake beyond calories. Unlike traditional calorie-focused apps, BetterBite emphasizes macro- and micronutrient balance, weekly trends, and personalized food recommendations.
 The app is designed for students, beginners, and health-conscious users who want clear, actionable nutrition insights without feeling overwhelmed.
 ## 🚀 What BetterBite Does
