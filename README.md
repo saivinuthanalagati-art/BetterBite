@@ -45,7 +45,7 @@ git clone https://github.com/your-username/betterbite.git
 cd betterbite
 open index.html
 ```
-The app uses browser local storage and external API calls — no server setup required.
+The app uses browser local storage and external API calls , no server setup required.
 
 👤 Author
 Vinutha
