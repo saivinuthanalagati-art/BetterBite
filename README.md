@@ -55,5 +55,6 @@ open index.html
 The app uses browser local storage and external API calls , no server setup required.
 
 👤 Author
+
 Vinutha
 Computer Science | Full-Stack Developer
